@@ -1,4 +1,3 @@
-# TableViewHW
-Lesson #35
+# TableViewSearchHW
 
-TableViewSearchHW
+Homework for TableView Search lesson #35
