@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		452AADF41C5285F400F0551F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 452AADF31C5285F400F0551F /* main.m */; };
-		452AADF71C5285F400F0551F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 452AADF61C5285F400F0551F /* AppDelegate.m */; };
-		452AADFA1C5285F400F0551F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452AADF91C5285F400F0551F /* ViewController.m */; };
+		452AADF71C5285F400F0551F /* ADAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 452AADF61C5285F400F0551F /* ADAppDelegate.m */; };
+		452AADFA1C5285F400F0551F /* ADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452AADF91C5285F400F0551F /* ADViewController.m */; };
 		452AADFD1C5285F400F0551F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 452AADFB1C5285F400F0551F /* Main.storyboard */; };
 		452AADFF1C5285F400F0551F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 452AADFE1C5285F400F0551F /* Images.xcassets */; };
 		452AAE021C5285F400F0551F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 452AAE001C5285F400F0551F /* LaunchScreen.xib */; };
@@ -30,10 +30,10 @@
 		452AADEE1C5285F400F0551F /* TableViewSearchHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewSearchHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		452AADF21C5285F400F0551F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		452AADF31C5285F400F0551F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		452AADF51C5285F400F0551F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		452AADF61C5285F400F0551F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		452AADF81C5285F400F0551F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		452AADF91C5285F400F0551F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		452AADF51C5285F400F0551F /* ADAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADAppDelegate.h; sourceTree = "<group>"; };
+		452AADF61C5285F400F0551F /* ADAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADAppDelegate.m; sourceTree = "<group>"; };
+		452AADF81C5285F400F0551F /* ADViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADViewController.h; sourceTree = "<group>"; };
+		452AADF91C5285F400F0551F /* ADViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADViewController.m; sourceTree = "<group>"; };
 		452AADFC1C5285F400F0551F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		452AADFE1C5285F400F0551F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		452AAE011C5285F400F0551F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -81,10 +81,8 @@
 		452AADF01C5285F400F0551F /* TableViewSearchHW */ = {
 			isa = PBXGroup;
 			children = (
-				452AADF51C5285F400F0551F /* AppDelegate.h */,
-				452AADF61C5285F400F0551F /* AppDelegate.m */,
-				452AADF81C5285F400F0551F /* ViewController.h */,
-				452AADF91C5285F400F0551F /* ViewController.m */,
+				452AAE181C52869000F0551F /* AppDelegate */,
+				452AAE171C52867E00F0551F /* ViewControllers */,
 				452AADFB1C5285F400F0551F /* Main.storyboard */,
 				452AADFE1C5285F400F0551F /* Images.xcassets */,
 				452AAE001C5285F400F0551F /* LaunchScreen.xib */,
@@ -117,6 +115,24 @@
 				452AAE0C1C5285F400F0551F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		452AAE171C52867E00F0551F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				452AADF81C5285F400F0551F /* ADViewController.h */,
+				452AADF91C5285F400F0551F /* ADViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		452AAE181C52869000F0551F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				452AADF51C5285F400F0551F /* ADAppDelegate.h */,
+				452AADF61C5285F400F0551F /* ADAppDelegate.m */,
+			);
+			name = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +235,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				452AADFA1C5285F400F0551F /* ViewController.m in Sources */,
-				452AADF71C5285F400F0551F /* AppDelegate.m in Sources */,
+				452AADFA1C5285F400F0551F /* ADViewController.m in Sources */,
+				452AADF71C5285F400F0551F /* ADAppDelegate.m in Sources */,
 				452AADF41C5285F400F0551F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
